@@ -28,7 +28,7 @@ if ($con->query($sql) === TRUE) {
    ?>
    <script>
       //window.location = "admin.php";
-        if(!alert('Employee deleted successfully.')){window.location = "admin.php?view_employee=view_employee";}
+        if(!alert('Student deleted successfully.')){window.location = "admin.php?view_employee=view_employee";}
    
    </script>
    <?php
@@ -37,7 +37,7 @@ if ($con->query($sql) === TRUE) {
     ?>
      <script>
        // window.location = "attendancepanel.php";
-          if(!alert('Can not delete employee.Some error occured')){window.location = "admin.php?view_employee=view_employee";}
+          if(!alert('Can not delete Student.Some error occured')){window.location = "admin.php?view_employee=view_employee";}
    
      </script>
    <?php

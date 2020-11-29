@@ -19,16 +19,18 @@
 if(isset($_GET['insert_employee'])) {
 
 ?>   
+<div class="container">
  <div class="container-fluid" style="background-color:lavenderblush";>
 
-          <h1 class="h1_index text-center">Employee Board</h1>
+          <h1 class="h1_index text-center">Students Board</h1>
 		   <br>
 		    <a class="a_color" href="admin.php"><button type="button" class="btn btn-primary btn-lg">Admin Dashboard</button></a>
 
 		   <br>
 </div>		   
+
    <div class="col-sm-10" style="background-color:lavenderblush;">
-     <h1>Enter Details of new employee.</h1>
+     <h1>Enter Details of new Student.</h1>
 
 <form  action="insertemployee.php" method="POST">
 
@@ -50,15 +52,15 @@ if(isset($_GET['insert_employee'])) {
  </div>
  <div class="form-group">
    <label for="formGroupExampleInput2">Email:</label>
-   <input type="text" name="email" class="form-control" id="formGroupExampleInput2" placeholder="name@example.com">
+   <input type="email" name="email" class="form-control" id="formGroupExampleInput2" placeholder="name@example.com">
  </div>
  <div class="form-group">
    <label for="formGroupExampleInput2">Date of Birth:</label>
-   <input type="text" name="dateofbirth" class="form-control" id="formGroupExampleInput2" placeholder="xx-xx-xxxx">
+   <input type="date" name="dateofbirth" class="form-control" id="formGroupExampleInput2" placeholder="xx-xx-xxxx">
  </div>
  <div class="form-group">
    <label for="formGroupExampleInput2">Contact No:</label>
-   <input type="text" name="contact" class="form-control" id="formGroupExampleInput2" placeholder="Contact Number">
+   <input type="number" name="contact" class="form-control" id="formGroupExampleInput2" placeholder="Contact Number">
  </div> 
  <div class="form-group">
    <label for="formGroupExampleInput2">Department:</label>
@@ -68,12 +70,13 @@ if(isset($_GET['insert_employee'])) {
  
  
   <div class="form-group">
-    <button type="submit" name="submit" value="submit">submit</button>
+    <button type="submit" name="submit" value="submit" class="btn btn-info">submit</button>
   </div> 
 
    </form>
    
 
+</div>
 </div>
 <?php } ?>
 
@@ -88,7 +91,7 @@ if(isset($_GET['view_employee'])) {
 
  <div class="container-fluid" style="background-color:lavenderblush";>
 
-          <h1 class="h1_index text-center">Employee Board</h1>
+          <h1 class="h1_index text-center">Student Board</h1>
 		   <br>
 		    <a class="a_color" href="admin.php"><button type="button" class="btn btn-primary btn-lg">Admin Dashboard</button></a>
 
@@ -97,7 +100,7 @@ if(isset($_GET['view_employee'])) {
 
     <div class="container-fluid" style="background-color:lavenderblush";>
 
-          <h1 class="h1_index text-center">Employee Details</h1>
+          <h1 class="h1_index text-center">Student Details</h1>
 
         <div class="col-sm-10">
 		

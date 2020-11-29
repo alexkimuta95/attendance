@@ -35,22 +35,22 @@ $con = mysqli_connect('localhost','root','','attendance');
 		    <a class="a_color" href="admin.php"><button type="button" class="btn btn-primary btn-lg">Admin Dashboard</button></a>
 
 		   <br>
-<h4 class="text-center">Employee can find there EID here and can use EID to view there attendance</h4>
+<h4 class="text-center">The Student can find their ID here and can use ID to view their attendance</h4>
 
 		
 		<table class="table table-striped table-bordered">
    <thead>
       <tr>
-        <th>EID</th>
+        <th>ID</th>
         <th>Name</th>
 		<th>Date</th>
-		<th>Present/Abscent</th>
+		<th>Present/Absent</th>
       </tr>
     </thead>
     <tbody>
 		
 		<?php 
-	      date_default_timezone_set('Asia/Kolkata');
+	      date_default_timezone_set('Africa/Nairobi');
 	       $date = date("Y-m-d");
            $Today = date("d-m-Y", strtotime($date));
           ?>

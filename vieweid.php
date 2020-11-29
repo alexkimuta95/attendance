@@ -3,15 +3,15 @@
 
     <div class="container-fluid" style="background-color:lavenderblush";>
 
-          <h1 class="h1_index text-center">Employee Details</h1>
+          <h1 class="h1_index text-center">Student Details</h1>
 		   <br>
-<h4 class="text-center">Employee can find there EID here and can use EID to view there attendance</h4>
+<h4 class="text-center">Student can find there SID here and can use SID to view own attendance</h4>
         <div class="col-sm-10">
 		
 		<table class="table table-striped table-bordered">
    <thead>
       <tr>
-        <th>Emp_Id</th>
+        <th>Stu_Id</th>
         <th>Name</th>
 		<th>Email</th>
 		<th>Department</th>
@@ -50,7 +50,6 @@ while($post=mysqli_fetch_assoc($record)) {
         <td><?php echo $post['id']; ?></td>
         <td><?php echo $post['name']; ?></td>
 		<td><?php echo $post['email']; ?></td>
-		<td><?php echo $post['contact_no']; ?></td>
 		<td><?php echo $post['department']; ?></td>
 	   </tr>
     

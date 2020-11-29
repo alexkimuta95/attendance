@@ -19,14 +19,15 @@
       ?>
 	  
 	  
-	  
-<div class="col-sm-12" style="background-color:#78d8db;"> 
+	 <div class="container"> 
+<div class="col-sm-12" style="background-color:#f4f4f4; border-radius:10%;"> 
 
       <h1 class="text-center" >Attendance Panel</h1>
   <br>
-   <a href="logout.php"><button type="button" class="btn btn-primary btn-lg">logout</button></a>
+  <a href="admin.php"><button type="button" class="btn btn-info btn-lg">Dashboard</button></a>
+   <a href="logout.php"><button type="button" class="btn btn-danger btn-lg">logout</button></a>
 
-   <a href="admin.php"><button type="button" class="btn btn-primary btn-lg">Dashboard</button></a>
+  
 
 </div>  
   
@@ -42,13 +43,13 @@
 			  $today = strval($total);
               if ($total == $ThisDate){
 				  ?> 
-  				  <h3 class="text-center">Attandace for Taday (<?php echo $ThisDate;  ?>) has been taken.</h3>
+  				  <h3 class="text-center">Attendance for Today (<?php echo $ThisDate;  ?>) has been taken.</h3>
 				  <h4 class="text-center">View Today's attendance <a href="viewattendanceadmin.php">here</a>.</h4>
 				   <br>
 				  <h3 class="text-center">If you want to take attendance or update then 
 				  
 				  <form action="deleteattendancetoday.php" method="post">
-				    <input type="submit" name="delete" value="delete"> previous attendace of today and retake</h3>
+				    <input type="submit" name="delete" value="delete"> previous attendance of today and retake</h3>
 				  </form>
 				  <?php
 				 // echo $total;
@@ -57,7 +58,7 @@
 
             ?>
 			<div class="col-sm-12">
-              <h4 class="text-center">Attandace Can Be Taken Only One time For a Date </h4>  
+              <h4 class="text-center">Attendance Can Be Taken Only One time in a day </h4>  
                <br>   
                <h3 class="text-center">Today is : <?php echo $ThisDate;  ?></h3>
   
@@ -79,7 +80,7 @@
 <table class="table table-striped">
     <thead>
       <tr>
-        <th>Emp_Id</th>
+        <th>SID</th>
         <th>Name</th>
         <th class="present_color">Present</th>
         <th>Absent</th>
@@ -122,13 +123,15 @@ while($post=mysqli_fetch_assoc($record)) {
       <tr>
         <td><?php echo $post['id']; ?></td>
         <td><?php echo $post['name']; ?></td>
-        <td><label><input type="checkbox" name="attendance[]" value="Present">Present</label></td>
-        <td><label><input type="checkbox" name="attendance[]" value="Abscent">Abscent</label></td>
+        <td><label><input type="radio" name="attendance[]" value="Present" >Present</label></td>
+        <td><label><input type="radio" name="attendance[]" value="Absent" >Absent</label></td>
       </tr>
+
+    
 
 <!-- function for today's date -->	  
    <?php     
-     date_default_timezone_set('Asia/Kolkata');
+     date_default_timezone_set('Africa/Nairobi');
 	           $date = date("Y-m-d");
                $ThisDate = date("d-m-Y", strtotime($date));
      ?>
@@ -144,7 +147,7 @@ while($post=mysqli_fetch_assoc($record)) {
      </tbody>
     </table>
    <div class="form-group">
-    <button type="submit" name="submit" value="submit">submit</button>
+    <button type="submit" name="submit" value="submit" class="btn btn-success center btn-lg">submit</button>
   </div>
  </form> 
   </div>

@@ -35,7 +35,7 @@ $con = mysqli_connect('localhost','root','','attendance');
 		    <a class="a_color" href="admin.php"><button type="button" class="btn btn-primary btn-lg">Admin Dashboard</button></a>
 
 		   <br>
-<h4 class="text-center">Overall attendance of employees sorted by date.</h4>
+<h4 class="text-center">Overall attendance of students sorted by date.</h4>
 
 
 		
@@ -45,7 +45,7 @@ $con = mysqli_connect('localhost','root','','attendance');
         <th>EID</th>
         <th>Name</th>
 		<th>Date</th>
-		<th>Present/Abscent</th>
+		<th>Present/Absent</th>
       </tr>
     </thead>
     <tbody>

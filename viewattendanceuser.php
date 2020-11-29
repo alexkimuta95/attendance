@@ -4,15 +4,15 @@
 <div class="container-fluid view_user">
 
  <div class="col-sm-12">
-  <h2 class="text-center">View Attendace</h2>
-  <p class="text-center">Enter your EID and submit.</p>
+  <h2 class="text-center">View Attendance</h2>
+  <p class="text-center">Enter your SID and submit.</p>
  </div> 
  <div class="col-sm-12 user_form_color">
  
   <form class="form-inline" action="" method="post">
     <div class="form-group">
-      <label for="email">EID:</label>
-      <input type="text" class="form-control" name="eid" placeholder="Enter EID" required>
+      <label for="email">SID:</label>
+      <input type="text" class="form-control" name="eid" placeholder="Enter SID" required>
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
@@ -48,7 +48,7 @@ $con = mysqli_connect('localhost','root','','attendance');
 				  ?>
 			  <script>
        // window.location = "admin.php?view_employee=view_employee";
-          if(!alert("Eid is wrong.Please reconfirm EID then try again ")){window.location = "viewattendanceuser.php";}
+          if(!alert("SID is wrong.Please reconfirm SID then try again ")){window.location = "viewattendanceuser.php";}
    
               </script>	  
 			  <?php } 
@@ -62,16 +62,16 @@ $con = mysqli_connect('localhost','root','','attendance');
 		    <a class="a_color" href="user.php"><button type="button" class="btn btn-primary btn-lg">User Dashboard</button></a>
 
 		   <br>
-<h4 class="text-center">Employee can find there EID here and can use EID to view there attendance</h4>
+<h4 class="text-center">Student can find their SID here and can use SID to view their attendance</h4>
 
 		
 		<table class="table table-striped table-bordered">
    <thead>
       <tr>
-        <th>EID</th>
+        <th>SID</th>
         <th>Name</th>
 		<th>Date</th>
-		<th>Present/Abscent</th>
+		<th>Present/Absent</th>
       </tr>
     </thead>
     <tbody>

@@ -36,7 +36,7 @@
      ?>
    <script>
      
-	  if(!alert('Employee added successfully.')){window.location = "admin.php?view_employee=view_employee";}
+	  if(!alert('Student added successfully.')){window.location = "admin.php?view_employee=view_employee";}
    </script>
    <?php
        } 
@@ -44,7 +44,7 @@
     ?>
      <script>
        // window.location = "admin.php?view_employee=view_employee";
-          if(!alert("Can not add employee. Some error occured")){window.location = "admin.php?view_employee=view_employee";}
+          if(!alert("Can not add student. Some error occured")){window.location = "admin.php?view_employee=view_employee";}
    
      </script>
    <?php

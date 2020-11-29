@@ -15,7 +15,7 @@
 
 <div class="container-fluid" style="background-color:lavenderblush";>
 
-          <h1 class="h1_index text-center">Update Employee Details.</h1>
+          <h1 class="h1_index text-center">Update Student Details.</h1>
           <br>
 		    <a class="a_color" href="admin.php"><button type="button" class="btn btn-primary btn-lg">Admin Dashboard</button></a>
 		   <br>
@@ -125,7 +125,7 @@ $sql1 = "UPDATE `employee_details` SET `name`='$name',`gender`='$gender',`email`
     ?>
    <script>
      
-	  if(!alert('Employee details updated successfully.')){window.location = "admin.php?view_employee=view_employee";}
+	  if(!alert('Student details updated successfully.')){window.location = "admin.php?view_employee=view_employee";}
    </script>
    <?php
        } 
@@ -133,7 +133,7 @@ $sql1 = "UPDATE `employee_details` SET `name`='$name',`gender`='$gender',`email`
     ?>
      <script>
        // window.location = "admin.php?view_employee=view_employee";
-          if(!alert("Can't update Employee details.Some error occured")){window.location = "admin.php?view_employee=view_employee";}
+          if(!alert("Can't update Student details.Some error occured")){window.location = "admin.php?view_employee=view_employee";}
    
      </script>
    <?php
